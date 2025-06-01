@@ -113,7 +113,7 @@ More: [OWASP Smart Contract Top 10](https://owasp.org/www-project-smart-contract
 
 ---
 
-# 🛡️📊🔟 OWASP Top 10 – Comparison: 2021 vs 2025 (Evolving Web Application Security)
+## 🛡️📊🔟 OWASP Top 10 – Comparison: 2021 vs 2025 (Evolving Web Application Security)
 
 The OWASP Top 10 is a globally recognized standard that highlights the most critical security risks to web applications. While the **2021 version** focused on traditional web security threats and application flaws, the upcoming **2025 version** is expected to reflect the shift towards **cloud-native development, AI/ML security**, and **modern software supply chain vulnerabilities**.
 
