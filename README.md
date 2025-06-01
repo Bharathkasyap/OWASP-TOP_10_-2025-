@@ -113,5 +113,77 @@ More: [OWASP Smart Contract Top 10](https://owasp.org/www-project-smart-contract
 
 ---
 
+# 🛡️📊🔟 OWASP Top 10 – Comparison: 2021 vs 2025 (Evolving Web Application Security)
+
+The OWASP Top 10 is a globally recognized standard that highlights the most critical security risks to web applications. While the **2021 version** focused on traditional web security threats and application flaws, the upcoming **2025 version** is expected to reflect the shift towards **cloud-native development, AI/ML security**, and **modern software supply chain vulnerabilities**.
+
+---
+
+## 📘 OWASP Top 10 – 2021 Summary
+
+The OWASP Top 10 (2021) emphasized long-standing and well-known issues like injection flaws, access control, misconfigurations, and outdated components. It introduced new categories like **Insecure Design** to capture architectural flaws and **Software and Data Integrity Failures** to reflect risks like dependency confusion and CI/CD pipeline abuse.
+
+Top Highlights:
+- A01: Broken Access Control – dominated breach reports
+- A03: Injection – included SQLi, XSS, and template injections
+- A05: Security Misconfiguration – emphasized lack of secure defaults
+- A08: Software and Data Integrity Failures – added due to real-world attacks like SolarWinds
+
+The 2021 list reflected a balanced view between code-level and design-level risks.
+
+---
+
+## 🚀 OWASP Top 10 – 2025 (Expected Trends)
+
+The OWASP Top 10 (2025) is projected to respond to the growing complexity of modern software. Cloud-native architectures, LLM-powered apps, and decentralized components (e.g., APIs, microservices) introduce risks not traditionally captured in older lists.
+
+Expected Enhancements:
+- Focus on **LLM Prompt Injection** and **model integrity**
+- API-specific issues such as **broken object-level authorization**
+- Cloud-focused misconfigurations (e.g., open buckets, insecure IAM)
+- Greater emphasis on **SBOM** and third-party dependency risks
+- Deprecation or merger of declining issues like SSRF
+
+The 2025 update will shift from just preventing developer mistakes to building **resilience into complex, integrated systems**.
+
+---
+
+## 🔄 OWASP Top 10 – 2021 vs 2025: Side-by-Side Comparison
+
+| OWASP 2021                              | OWASP 2025 (Expected Direction)                                                | Key Differences                                                                 |
+|----------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| A01: Broken Access Control             | Expanded to include API/Cloud IAM abuses                                      | Extends to multi-cloud & API gateway issues                                      |
+| A02: Cryptographic Failures            | Token management, key rotation, encryption hygiene                            | Includes zero-trust token abuse and poor JWT handling                           |
+| A03: Injection                         | Includes LLM prompt injection, GraphQL, and NoSQL injections                  | Broader than SQL/XSS – focus on AI/ML and complex data interfaces               |
+| A04: Insecure Design                   | May include insecure AI model usage or flawed ML pipelines                    | Focus on flawed architecture involving automation and intelligent systems        |
+| A05: Security Misconfiguration         | Cloud-native, K8s, serverless and IaC errors                                  | Now focuses on secure cloud configurations, IaC scanning                        |
+| A06: Vulnerable Components             | Includes SBOM, vulnerable AI libraries, and dependency chains                 | Emphasizes integrity of third-party and AI/ML dependencies                      |
+| A07: Auth Failures                     | OAuth, OpenID, and misconfigured passwordless auth                            | Passwords take backseat; now it's about SSO, MFA bypass, and misused tokens     |
+| A08: Integrity Failures                | LLM training poisoning, unsigned models, CI/CD poisoning                      | Training data and AI model poisoning now under scrutiny                         |
+| A09: Logging/Monitoring Failures       | Detection engineering, log centralization, SIEM blind spots                   | Focus shifts to detection capabilities in hybrid environments                   |
+| A10: SSRF                              | Possibly merged or dropped                                                    | Fewer SSRF incidents due to improved frameworks and proxy controls              |
+
+---
+
+## 🔍 What This Means for Developers and Security Teams
+
+- **2021** was about fixing known issues in code and infrastructure.
+- **2025** is about *anticipating emerging attack vectors* in AI-driven, cloud-based, and decentralized systems.
+- Developers must now secure *not just their app logic*, but also pipelines, plugins, models, APIs, and cloud resources.
+- Security teams need to focus more on **threat modeling**, **automated detection**, and **supply chain verification**.
+
+---
+
+## 📎 Resources
+
+- [OWASP Top Ten (2021)](https://owasp.org/Top10/)
+- [OWASP Project – LLM Top 10](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+- [OWASP NHI Top 10 (2025)](https://owasp.org/www-project-non-human-identities-top-10/2025/top-10-2025/)
+- [OWASP Smart Contract Top 10](https://owasp.org/www-project-smart-contract-top-10/)
+
+---
+
+Stay tuned and watch the [OWASP Official Site](https://owasp.org) for the full 2025 release. Update your threat models and DevSecOps pipelines accordingly!
+
 ## Note:
 This document is based on the latest public OWASP project pages as of June 2025. Web Application Top 10 (2025) is pending official release.
