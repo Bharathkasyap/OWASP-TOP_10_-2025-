@@ -148,6 +148,23 @@ The 2025 update will shift from just preventing developer mistakes to building *
 
 ---
 
+
+# 🔄 OWASP Top 10 – What Changed from 2021 to 2025
+
+| 🔢 2021 Category                        | ⏩ 2025 Direction/Change                                                             | 📝 Key Update Summary                                                                 |
+|----------------------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| A01: Broken Access Control             | Expanded to cover API access, Cloud IAM, and zero trust policies                   | More focus on object-level authorization, IAM role abuse in cloud/API environments     |
+| A02: Cryptographic Failures            | Emphasizes key rotation, token handling, JWT misconfigurations                     | Shift from weak encryption to real-world crypto management and secret hygiene          |
+| A03: Injection                         | Expanded to LLM Prompt Injection, NoSQL, GraphQL                                   | Moves beyond SQLi/XSS to modern, AI and API-based injection risks                      |
+| A04: Insecure Design                   | Includes insecure AI model pipelines and LLM architecture flaws                    | Broader scope covering architectural risks in AI and ML systems                        |
+| A05: Security Misconfiguration         | Adds IaC (Terraform), K8s misconfig, cloud-native defaults                         | Emphasizes cloud and DevOps stack misconfigurations                                    |
+| A06: Vulnerable Components             | Adds Software Bill of Materials (SBOM), open-source risks                          | Includes supply chain attacks and vulnerable AI libraries                              |
+| A07: Identification & Auth Failures   | Now includes SSO misconfig, MFA bypass, OAuth/OpenID weaknesses                    | Password handling declines; token and federated auth misuses take lead                 |
+| A08: Software & Data Integrity Failure| Covers CI/CD poisoning, LLM training data poisoning                                | Now includes data poisoning in AI and integrity issues in software pipelines           |
+| A09: Logging & Monitoring Failures    | Evolved into detection engineering and SIEM integration gaps                       | From basic logging to effective incident detection in hybrid/cloud environments        |
+| A10: SSRF                              | Likely deprecated or merged                                                        | Decreased prevalence due to secure-by-default frameworks                               |
+---
+
 ## 🔄 OWASP Top 10 – 2021 vs 2025: Side-by-Side Comparison
 
 | OWASP 2021                              | OWASP 2025 (Expected Direction)                                                | Key Differences                                                                 |
